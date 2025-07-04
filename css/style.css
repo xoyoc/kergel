@@ -253,6 +253,7 @@ nav ul a {
    =================================== */
 .servicios {
     background: url("../img/Fondo-Foto-Contenedor.jpg") top/cover no-repeat;
+    background-color:var(--color-azul-oscuro);
     min-height: 100vh;
     position: relative;
     overflow: hidden;
