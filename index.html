@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <div>
             <nav>
                 <div class="logo_menu"><img src="./img/Logo-Kergel-Chico.png" alt="Logotipo"></div>
                 <ul>
-                    <a href="#"><li class="textblanco_menu">Inicio</li></a>
-                    <a href="#"><li class="textblanco_menu">Quíenes somos</li></a>
-                    <a href="#"><li class="textblanco_menu">Servicios</li></a>
-                    <a href="#"><li class="textblanco_menu">Ventajas</li></a>
-                    <a href="#"><li class="textblanco_menu">Clientes</li></a>
-                    <a href="#"><li class="textblanco_menu">Contacto</li></a>
+                    <a href="#incio"><li class="textblanco_menu">Inicio</li></a>
+                    <a href="#quienes_somos"><li class="textblanco_menu">Quíenes somos</li></a>
+                    <a href="#servicios"><li class="textblanco_menu">Servicios</li></a>
+                    <a href="#ventajas"><li class="textblanco_menu">Ventajas</li></a>
+                    <a href="#clientes"><li class="textblanco_menu">Clientes</li></a>
+                    <a href="#contacto"><li class="textblanco_menu">Contacto</li></a>
                 </ul>
             </nav>
             <div class="seccion_logo_principal">
@@ -41,16 +41,16 @@
                 <p class="texto_descripcion">Empresa comercializadora especializada en conectar a empresas con los mejores productos del mundo.</p>
             </div>
         </div>
-         <sectio class="quienes_somos"> <!-- Inicio quienes somos -->
+         <sectio class="quienes_somos" id="quienes_somos"> <!-- Inicio quienes somos -->
             <img class="acento" src="./img/Acento-Kergel.png" alt="Seperador">
             <p class="parrafo_nosotros">Nos encargamos de todo el proceso de importación, desde la busqueda del proveedor ideal hasta la entrega en el punto de destino. Trabajamos con una red global de socios estrategicos y utilizamos las mejores practicas logisticas para garantizar calidad, precio competitivo y confianza total en cada operación. En Kergel conectamos mundos y creamos soluciones sin tronteras</p>
-            <h4 class="titulo_secundarios">Conectando posibilidades, sin importar la distancia</h4>
+            <h4 class="titulo_secundarios">Conectando posibilidades,<br>sin importar la distancia</h4>
             <p class="parrafo_nosotros">En Kergel creemos que no hay limites cuando se trata de crecer. Somos una comercializadora internacional enfocada en abastecer productos de alto valor para empresas industriales y distribuidores brinando soluciones integrales de importacion a la medida.</p>
             <p class="parrafo_nosotros">Nuestra travectoria esta respaldada por un equipo con experiencia en comercio exteror. abastecimiento nienacion oberaciones logisticas. Formamos parte de un grupo empresarial con presencia en mútioles paises y alanzas logisticas consolidadas, lo que nos permite acceder a proveedores verificados, mejores rutas de importación v taritas preferenciales.</p>
             <p class="parrafo_nosotros">Desde Asia hasta Europa. América Latina y más allá. nuestro alcance es global, pero nuestra atención es personalizada.</p>
          </section> <!-- Inicio quienes somos -->
 
-        <section class="servicios"> <!-- Nuestros Servicios -->
+        <section class="servicios" id="servicios"> <!-- Nuestros Servicios -->
             <h2 class="titulo_servicios">Nuestros Servicios</h2>
             <p class="parrafo_servicios">Otrecemos un modelo integral que cubre toda la cadena suministro para que tu empresa obtenga el producto que necesita, en el lugar que lo requiere, sin preocuparse por el "como".</p>
             <div class="contenedor_servicios">
@@ -81,7 +81,7 @@
             </div>
         </section>  <!-- Nuestros Servicios -->
 
-        <section class="ventajas"> <!-- Ventajas competitivas -->
+        <section class="ventajas" id="ventajas"> <!-- Ventajas competitivas -->
             <h5 class="titulo_ventajas">Ventajas competitivas</h5>
             <div class="contenedor_ventajas">
                 <div class="ventaja_item">
@@ -161,7 +161,7 @@
         </section>  <!-- Como trabajamos -->
 
 
-        <section class="seccion_clientes">   <!-- Clientes que confían -->
+        <section class="seccion_clientes" id="clientes">   <!-- Clientes que confían -->
             <h5 class="titulo_clientes">Clientes que confían</br>en nosotros</h5>
             <p class="descripcion_clientes">Nos enfocamos en empresas industriales y distribuidores que requieren importar insumos estratégicos, pero desean evitar los riegos, tiempos y complicaciones de operar directamente en mercados extranjeros. Ya sean compras recurrentes o proyectos especiales, en Kergel ofrecemos soluciones flexibles, confiables y rentables.</p>
             <div class="contenedor_logos">
@@ -187,36 +187,31 @@
                 Si tu empresa necesita importar productos desde cualquier parte del mundo, Kergel es tu socio estratégico. Nos encargamos de todo para que tú solo te ocupes de crecerción es personalizada.
             </p>
             
-            <div class="contenedor_formulario">
+            <div class="contenedor_formulario" id="contacto">
                 <form class="formulario_contacto" action="#" method="POST">
                     <!-- Primera fila: Nombre y Empresa -->
                     <div class="fila_campos">
                         <div class="grupo_campo">
-                            <label for="nombre" class="label_campo">Nombre Completo*</label>
-                            <input type="text" id="nombre" name="nombre" class="campo_entrada" placeholder="Tu nombre completo" required>
+                            <input type="text" id="nombre" name="nombre" class="campo_entrada" placeholder="Nombre Completo*" required>
                         </div>
                         <div class="grupo_campo">
-                            <label for="empresa" class="label_campo">Empresa*</label>
-                            <input type="text" id="empresa" name="empresa" class="campo_entrada" placeholder="Nombre de tu empresa" required>
+                            <input type="text" id="empresa" name="empresa" class="campo_entrada" placeholder="Empresa*" required>
                         </div>
                     </div>
                     
                     <!-- Segunda fila: Email y Teléfono -->
                     <div class="fila_campos">
                         <div class="grupo_campo">
-                            <label for="email" class="label_campo">Email*</label>
-                            <input type="email" id="email" name="email" class="campo_entrada" placeholder="tu@email.com" required>
+                            <input type="email" id="email" name="email" class="campo_entrada" placeholder="Email*" required>
                         </div>
                         <div class="grupo_campo">
-                            <label for="telefono" class="label_campo">Teléfono*</label>
-                            <input type="tel" id="telefono" name="telefono" class="campo_entrada" placeholder="+52 333 123 4567" required>
+                            <input type="tel" id="telefono" name="telefono" class="campo_entrada" placeholder="Teléfono*" required>
                         </div>
                     </div>
                     
                     <!-- Campo de mensaje -->
                     <div class="grupo_campo">
-                        <label for="mensaje" class="label_campo">Mensaje*</label>
-                        <textarea id="mensaje" name="mensaje" class="campo_mensaje" placeholder="Cuéntanos sobre tu proyecto o necesidades de importación..." required></textarea>
+                        <textarea id="mensaje" name="mensaje" class="campo_mensaje" placeholder="Mensaje*" required></textarea>
                     </div>
                     
                     <!-- Botón de enviar -->
