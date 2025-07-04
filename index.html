@@ -1,125 +1,247 @@
 <!DOCTYPE html>
-<html lang="es-mx">
+<html lang="es-MX">
 <head>
+    <!-- Meta Tags Básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Kergel" />
-    <link rel="manifest" href="./favicon/site.webmanifest" />
-    <title>Kergel</title>
+    <meta name="description" content="Kergel - Tu socio global en abastecimiento inteligente. Empresa comercializadora especializada en conectar empresas con los mejores productos del mundo.">
+    <meta name="keywords" content="importación, comercialización internacional, abastecimiento, productos industriales, logística, comercio exterior">
+    <meta name="author" content="Kergel - Connecting Worlds">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kergel - Tu Socio Global En Abastecimiento Inteligente">
+    <meta property="og:description" content="Empresa comercializadora especializada en conectar empresas con los mejores productos del mundo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xoyoc.github.io/kergel/">
+    <meta property="og:image" content="https://xoyoc.github.io/kergel/img/Logo-Principal-Blanco-Kergel.png">
+    <meta property="og:site_name" content="Kergel">
+    <meta property="og:locale" content="es_MX">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kergel - Tu Socio Global En Abastecimiento Inteligente">
+    <meta name="twitter:description" content="Empresa comercializadora especializada en conectar empresas con los mejores productos del mundo.">
+    <meta name="twitter:image" content="https://xoyoc.github.io/kergel/img/Logo-Principal-Blanco-Kergel.png">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Kergel">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1a365d">
+    <meta name="msapplication-TileColor" content="#1a365d">
+    
+    <!-- Título -->
+    <title>Kergel - Tu Socio Global En Abastecimiento Inteligente</title>
+    
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="preload" href="./img/Logo-Principal-Blanco-Kergel.png" as="image">
+    <link rel="preload" href="./img/Fondo-Principal-Textura.jpg" as="image">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Kergel",
+        "description": "Tu socio global en abastecimiento inteligente",
+        "url": "https://xoyoc.github.io/kergel/",
+        "logo": "https://xoyoc.github.io/kergel/img/Logo-Principal-Blanco-Kergel.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+52-333-570-7315",
+            "contactType": "Customer Service",
+            "email": "sales@kergel.com.mx"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Salvador Madariaga 5277",
+            "addressLocality": "Zapopan",
+            "addressRegion": "Jalisco",
+            "postalCode": "45110",
+            "addressCountry": "MX"
+        }
+    }
+    </script>
 </head>
+
 <body>
-    <header id="inicio">
-        <div>
-            <nav>
-                <div class="logo_menu"><img src="./img/Logo-Kergel-Chico.png" alt="Logotipo"></div>
-                <ul>
-                    <a href="#incio"><li class="textblanco_menu">Inicio</li></a>
-                    <a href="#quienes_somos"><li class="textblanco_menu">Quíenes somos</li></a>
-                    <a href="#servicios"><li class="textblanco_menu">Servicios</li></a>
-                    <a href="#ventajas"><li class="textblanco_menu">Ventajas</li></a>
-                    <a href="#clientes"><li class="textblanco_menu">Clientes</li></a>
-                    <a href="#contacto"><li class="textblanco_menu">Contacto</li></a>
+    <!-- Skip to Content para Accesibilidad -->
+    <a href="#main-content" class="sr-only">Saltar al contenido principal</a>
+    
+    <!-- Header Principal -->
+    <header id="inicio" role="banner">
+        <div class="header-container">
+            <!-- Navegación Principal -->
+            <nav role="navigation" aria-label="Navegación principal">
+                <div class="logo_menu">
+                    <img src="./img/Logo-Kergel-Chico.png" alt="Logotipo Kergel" width="35" height="35">
+                </div>
+                <ul role="menubar">
+                    <li role="none">
+                        <a href="#inicio" class="textblanco_menu" role="menuitem" aria-label="Ir a inicio">Inicio</a>
+                    </li>
+                    <li role="none">
+                        <a href="#quienes-somos" class="textblanco_menu" role="menuitem" aria-label="Ir a quiénes somos">Quiénes Somos</a>
+                    </li>
+                    <li role="none">
+                        <a href="#servicios" class="textblanco_menu" role="menuitem" aria-label="Ir a servicios">Servicios</a>
+                    </li>
+                    <li role="none">
+                        <a href="#ventajas" class="textblanco_menu" role="menuitem" aria-label="Ir a ventajas">Ventajas</a>
+                    </li>
+                    <li role="none">
+                        <a href="#clientes" class="textblanco_menu" role="menuitem" aria-label="Ir a clientes">Clientes</a>
+                    </li>
+                    <li role="none">
+                        <a href="#contacto" class="textblanco_menu" role="menuitem" aria-label="Ir a contacto">Contacto</a>
+                    </li>
                 </ul>
             </nav>
-            <div class="seccion_logo_principal">
-                <div class="logo_principal"><img src="./img/Logo-Principal-Blanco-Kergel.png" alt="Logo Principal Kergel"></div>
-                <h2 class="titulo_principal">Tu Socio Global En Abastecimiento Inteligente</h2>
-            </div>
+            
+            <!-- Sección Hero -->
+            <section class="seccion_logo_principal" aria-labelledby="hero-title">
+                <div class="logo_principal">
+                    <img src="./img/Logo-Principal-Blanco-Kergel.png" alt="Logo Principal Kergel - Connecting Worlds" width="450" height="auto">
+                </div>
+                <h1 id="hero-title" class="titulo_principal">
+                    Tu Socio Global En<br>Abastecimiento Inteligente
+                </h1>
+            </section>
         </div>
     </header>
     
-    <main>
-        <div class="seccion_descripcion">
-            <div class="caja_descripcion">
-                <p class="texto_descripcion">Empresa comercializadora especializada en conectar a empresas con los mejores productos del mundo.</p>
-            </div>
+    <!-- Caja Flotante de Descripción -->
+    <div class="seccion_descripcion" aria-label="Descripción de servicios">
+        <div class="caja_descripcion">
+            <p class="texto_descripcion">
+                Empresa comercializadora especializada en conectar a empresas con los mejores productos del mundo.
+            </p>
         </div>
-         <sectio class="quienes_somos" id="quienes_somos"> <!-- Inicio quienes somos -->
-            <img class="acento" src="./img/Acento-Kergel.png" alt="Seperador">
-            <p class="parrafo_nosotros">Nos encargamos de todo el proceso de importación, desde la busqueda del proveedor ideal hasta la entrega en el punto de destino. Trabajamos con una red global de socios estrategicos y utilizamos las mejores practicas logisticas para garantizar calidad, precio competitivo y confianza total en cada operación. En Kergel conectamos mundos y creamos soluciones sin tronteras</p>
-            <h4 class="titulo_secundarios">Conectando posibilidades,<br>sin importar la distancia</h4>
-            <p class="parrafo_nosotros">En Kergel creemos que no hay limites cuando se trata de crecer. Somos una comercializadora internacional enfocada en abastecer productos de alto valor para empresas industriales y distribuidores brinando soluciones integrales de importacion a la medida.</p>
-            <p class="parrafo_nosotros">Nuestra travectoria esta respaldada por un equipo con experiencia en comercio exteror. abastecimiento nienacion oberaciones logisticas. Formamos parte de un grupo empresarial con presencia en mútioles paises y alanzas logisticas consolidadas, lo que nos permite acceder a proveedores verificados, mejores rutas de importación v taritas preferenciales.</p>
-            <p class="parrafo_nosotros">Desde Asia hasta Europa. América Latina y más allá. nuestro alcance es global, pero nuestra atención es personalizada.</p>
-         </section> <!-- Inicio quienes somos -->
-
-        <section class="servicios" id="servicios"> <!-- Nuestros Servicios -->
-            <h2 class="titulo_servicios">Nuestros Servicios</h2>
-            <p class="parrafo_servicios">Otrecemos un modelo integral que cubre toda la cadena suministro para que tu empresa obtenga el producto que necesita, en el lugar que lo requiere, sin preocuparse por el "como".</p>
+    </div>
+    
+    <!-- Contenido Principal -->
+    <main id="main-content" role="main">
+        <!-- Sección Quiénes Somos -->
+        <section id="quienes-somos" class="quienes_somos" aria-labelledby="quienes-somos-title">
+            <img class="acento" src="./img/Acento-Kergel.png" alt="Separador decorativo" role="presentation">
+            
+            <div class="contenido-quienes-somos">
+                <p class="parrafo_nosotros">
+                    Nos encargamos de todo el proceso de importación, desde la búsqueda del proveedor ideal hasta la entrega en el punto de destino. Trabajamos con una red global de socios estratégicos y utilizamos las mejores prácticas logísticas para garantizar calidad, precio competitivo y confianza total en cada operación. En Kergel conectamos mundos y creamos soluciones sin fronteras.
+                </p>
+                
+                <h2 id="quienes-somos-title" class="titulo_secundarios">
+                    Conectando posibilidades,<br>sin importar la distancia
+                </h2>
+                
+                <p class="parrafo_nosotros">
+                    En Kergel creemos que no hay límites cuando se trata de crecer. Somos una comercializadora internacional enfocada en abastecer productos de alto valor para empresas industriales y distribuidores brindando soluciones integrales de importación a la medida.
+                </p>
+                
+                <p class="parrafo_nosotros">
+                    Nuestra trayectoria está respaldada por un equipo con experiencia en comercio exterior, abastecimiento internacional y operaciones logísticas. Formamos parte de un grupo empresarial con presencia en múltiples países y alianzas logísticas consolidadas, lo que nos permite acceder a proveedores verificados, mejores rutas de importación y tarifas preferenciales.
+                </p>
+                
+                <p class="parrafo_nosotros">
+                    Desde Asia hasta Europa, América Latina y más allá, nuestro alcance es global, pero nuestra atención es personalizada.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Sección Servicios -->
+        <section id="servicios" class="servicios" aria-labelledby="servicios-title">
+            <h2 id="servicios-title" class="titulo_servicios">Nuestros Servicios</h2>
+            
+            <p class="parrafo_servicios">
+                Ofrecemos un modelo integral que cubre toda la cadena de suministro para que tu empresa obtenga el producto que necesita, en el lugar que lo requiere, sin preocuparse por el "cómo".
+            </p>
+            
             <div class="contenedor_servicios">
-                <div class="columna_servicio">
-                    <h5 class="titulo_servicio">Comercialización Internacional</h5>
+                <article class="columna_servicio">
+                    <h3 class="titulo_servicio">Comercialización Internacional:</h3>
                     <ul class="lista_servicio">
-                        <li class="item_servicio">Suministro de productos a mayoreo baja demanda</li>
+                        <li class="item_servicio">Suministro de productos a mayoreo bajo demanda</li>
                         <li class="item_servicio">Especialización en el sector construcción e industrial</li>
                         <li class="item_servicio">Búsqueda personalizada según especificaciones del cliente</li>
                     </ul>
-                </div>
-                <div class="columna_servicio">
-                    <h5 class="titulo_servicio">Importació llave en mano:</h5>
+                </article>
+                
+                <article class="columna_servicio">
+                    <h3 class="titulo_servicio">Importación llave en mano:</h3>
                     <ul class="lista_servicio">
                         <li class="item_servicio">Cotización en precio final entregado</li>
                         <li class="item_servicio">(producto + logística + aduanas + impuestos)</li>
-                        <li class="item_servicio">Entrega en planta, bpobodega o centro de distribución</li>
+                        <li class="item_servicio">Entrega en planta, bodega o centro de distribución</li>
                     </ul>
-                </div>
-                <div class="columna_servicio">
-                    <h5 class="titulo_servicio">Servicios adicionales de valor:</h5>
+                </article>
+                
+                <article class="columna_servicio">
+                    <h3 class="titulo_servicio">Servicios adicionales de valor:</h3>
                     <ul class="lista_servicio">
                         <li class="item_servicio">Inspección de calidad en origen</li>
-                        <li class="item_servicio">Seguro de carga</li>
+                        <li class="item_servicio">Seguros de carga</li>
                         <li class="item_servicio">Financiamiento a importaciones seleccionadas</li>
                     </ul>
-                </div>
+                </article>
             </div>
-        </section>  <!-- Nuestros Servicios -->
-
-        <section class="ventajas" id="ventajas"> <!-- Ventajas competitivas -->
-            <h5 class="titulo_ventajas">Ventajas competitivas</h5>
+        </section>
+        
+        <!-- Sección Ventajas Competitivas -->
+        <section id="ventajas" class="ventajas" aria-labelledby="ventajas-title">
+            <h2 id="ventajas-title" class="titulo_ventajas">Ventajas Competitivas</h2>
+            
             <div class="contenedor_ventajas">
-                <div class="ventaja_item">
-                    <h6 class="ventaja_titulo">Simplicidad:</h6>
-                    </br>
-                    <p>Eliminamos la complejidad de importar</p>
-                </div>
-                <div class="ventaja_item">
-                    <h6 class="ventaja_titulo">Confianza:</h6>
-                    </br>
-                    <p>Proveedores verificados, procesos sólidos</p>
-                </div>
-                <div class="ventaja_item">
-                    <h6 class="ventaja_titulo">Red grobal:</h6>
-                    </br>
-                    <p>Acceso a fabricantes líderes en Asia, Europa y América.</p>
-                </div>
+                <article class="ventaja_item">
+                    <h3 class="ventaja_titulo">Simplicidad:</h3>
+                    <p class="ventaja_descripcion">Eliminamos la complejidad de importar.</p>
+                </article>
+                
+                <article class="ventaja_item">
+                    <h3 class="ventaja_titulo">Confianza:</h3>
+                    <p class="ventaja_descripcion">Proveedores verificados, procesos sólidos.</p>
+                </article>
+                
+                <article class="ventaja_item">
+                    <h3 class="ventaja_titulo">Red global:</h3>
+                    <p class="ventaja_descripcion">Acceso a fabricantes líderes en Asia, Europa y América.</p>
+                </article>
             </div>
+            
             <div class="contenedor_ventajas_dos">
-                <div class="ventaja_item">
-                    <h6 class="ventaja_titulo">Ahorro:</h6>
-                    </br>
-                    <p>Precios competitivos gracias a nuestra capacidad de negociación</p>
-                </div>
-                <div class="ventaja_item">
-                    <h6 class="ventaja_titulo">Transparencia total:</h6>
-                    </br>
-                    <p>Sin sorpresas ni cargos ocultos.</p>
-                </div>
+                <article class="ventaja_item">
+                    <h3 class="ventaja_titulo">Ahorro:</h3>
+                    <p class="ventaja_descripcion">Precios competitivos gracias a nuestra capacidad de negociación.</p>
+                </article>
+                
+                <article class="ventaja_item">
+                    <h3 class="ventaja_titulo">Transparencia total:</h3>
+                    <p class="ventaja_descripcion">Sin sorpresas ni cargos ocultos.</p>
+                </article>
             </div>
-        </section>  <!-- Ventajas competitivas -->
-
-        <section class="seccion_proceso">  <!-- Como trabajamos -->
-            <h2 class="titulo_proceso">¿Cómo Trabajamos?<br>Paso a Paso</h2>
+        </section>
+        
+        <!-- Sección Proceso de Trabajo -->
+        <section class="seccion_proceso" aria-labelledby="proceso-title">
+            <h2 id="proceso-title" class="titulo_proceso">¿Cómo Trabajamos?<br>Paso a Paso</h2>
             
             <div class="contenedor_proceso">
-                <!-- Línea conectora con puntos -->
-                <div class="linea_proceso">
+                <!-- Línea conectora visual -->
+                <div class="linea_proceso" role="presentation" aria-hidden="true">
                     <div class="inicio_proceso"></div>
                     <div class="punto_proceso"></div>
                     <div class="punto_proceso"></div>
@@ -127,142 +249,609 @@
                     <div class="fin_proceso"></div>
                 </div>
                 
-                <!-- Tarjetas del proceso -->
+                <!-- Pasos del proceso -->
                 <div class="tarjetas_proceso">
-                    <div class="tarjeta_proceso">
-                        <div class="numero_paso">1</div>
+                    <article class="tarjeta_proceso">
+                        <div class="numero_paso" aria-label="Paso 1">1</div>
                         <div class="contenido_tarjeta">
                             <h3>Entendemos tu necesidad: Nos platicas qué producto buscas y para qué lo necesitas.</h3>
                         </div>
-                    </div>
+                    </article>
                     
-                    <div class="tarjeta_proceso">
-                        <div class="numero_paso">2</div>
+                    <article class="tarjeta_proceso">
+                        <div class="numero_paso" aria-label="Paso 2">2</div>
                         <div class="contenido_tarjeta">
                             <h3>Buscamos y validamos proveedores: Investigamos en nuestra red global, seleccionamos calidad y precio.</h3>
                         </div>
-                    </div>
+                    </article>
                     
-                    <div class="tarjeta_proceso">
-                        <div class="numero_paso">3</div>
+                    <article class="tarjeta_proceso">
+                        <div class="numero_paso" aria-label="Paso 3">3</div>
                         <div class="contenido_tarjeta">
                             <h3>Te cotizamos un precio final: Recibes una propuesta "todo incluido": producto, logística, aduanas, impuestos.</h3>
                         </div>
-                    </div>
+                    </article>
                     
-                    <div class="tarjeta_proceso">
-                        <div class="numero_paso">4</div>
+                    <article class="tarjeta_proceso">
+                        <div class="numero_paso" aria-label="Paso 4">4</div>
                         <div class="contenido_tarjeta">
                             <h3>Ejecutamos y entregamos: Coordinamos toda la operación hasta que el producto llegue a su destino.</h3>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </section>  <!-- Como trabajamos -->
-
-
-        <section class="seccion_clientes" id="clientes">   <!-- Clientes que confían -->
-            <h5 class="titulo_clientes">Clientes que confían</br>en nosotros</h5>
-            <p class="descripcion_clientes">Nos enfocamos en empresas industriales y distribuidores que requieren importar insumos estratégicos, pero desean evitar los riegos, tiempos y complicaciones de operar directamente en mercados extranjeros. Ya sean compras recurrentes o proyectos especiales, en Kergel ofrecemos soluciones flexibles, confiables y rentables.</p>
-            <div class="contenedor_logos">
-                <div class="logo_cliente logo_ecotushies"><img src="./img/clientes/Logo-EcoTushies.png" alt="eco tushies"></div>
-                <div class="logo_cliente logo_orcemex"><img src="./img/clientes/Logo-OrceMex.png" alt="orcemex"></div>
-                <div class="logo_cliente logo_gappy"><img src="./img/clientes/Logo-DannyYo.png" alt="danny yo"></div>
-                <div class="logo_cliente logo_dre"><img src="./img/clientes/Logo-Dreta.png" alt="Dreta"></div>
-                <div class="logo_cliente logo_alvino"><img src="./img/clientes/Logo-Alvino.png" alt="Alvino"></div>
-                <div class="logo_cliente logo_comchi"><img src="./img/clientes/Logo-Comchi.png" alt="Comchi"></div>
-            </div>
-            <div class="contenedor_logos_tres">
-                <div class="logo_cliente logo_rk"><img src="./img/clientes/Logo-Caminante.png" alt="grupo ferretero"></div>
-                <div class="logo_cliente logo_klyr"><img src="./img/clientes/Logo-Klyr.png" alt="Klyr hielo"></div>
-                <div class="logo_cliente logo_ljt"><img src="./img/clientes/Logo-Lft.png" alt="LFT"></div>
-            </div>
-            <img class="acento" src="./img/Acento-Kergel.png" alt="Seperador">
-        </section>  <!-- Clientes que confían -->
-
-        <section class="seccion_contacto"> <!-- Contáctanos -->
-            <h2 class="titulo_contacto">Contáctanos</h2>
+        </section>
+        
+        <!-- Sección Clientes -->
+        <section id="clientes" class="seccion_clientes" aria-labelledby="clientes-title">
+            <h2 id="clientes-title" class="titulo_clientes">Clientes que Confían<br>en Nosotros</h2>
             
-            <p class="descripcion_contacto">
-                Si tu empresa necesita importar productos desde cualquier parte del mundo, Kergel es tu socio estratégico. Nos encargamos de todo para que tú solo te ocupes de crecerción es personalizada.
+            <p class="descripcion_clientes">
+                Nos enfocamos en empresas industriales y distribuidores que requieren importar insumos estratégicos, pero desean evitar los riesgos, tiempos y complicaciones de operar directamente en mercados extranjeros. Ya sean compras recurrentes o proyectos especiales, en Kergel ofrecemos soluciones flexibles, confiables y rentables.
             </p>
             
-            <div class="contenedor_formulario" id="contacto">
-                <form class="formulario_contacto" action="#" method="POST">
+            <div class="contenedor_logos" role="img" aria-label="Logos de clientes">
+                <div class="logo_cliente">
+                    <img src="./img/clientes/Logo-EcoTushies.png" alt="EcoTushies - Cliente de Kergel" width="120" height="60">
+                </div>
+                <div class="logo_cliente">
+                    <img src="./img/clientes/Logo-OrceMex.png" alt="OrceMex - Cliente de Kergel" width="120" height="60">
+                </div>
+                <div class="logo_cliente">
+                    <img src="./img/clientes/Logo-DannyYo.png" alt="Danny Yo - Cliente de Kergel" width="120" height="60">
+                </div>
+                <div class="logo_cliente">
+                    <img src="./img/clientes/Logo-Dreta.png" alt="Dreta - Cliente de Kergel" width="120" height="60">
+                </div>
+                <div class="logo_cliente">
+                    <img src="./img/clientes/Logo-Alvino.png" alt="Alvino - Cliente de Kergel" width="120" height="60">
+                </div>
+                <div class="logo_cliente">
+                    <img src="./img/clientes/Logo-Comchi.png" alt="Comchi - Cliente de Kergel" width="120" height="60">
+                </div>
+            </div>
+            
+            <div class="contenedor_logos_tres">
+                <div class="logo_cliente">
+                    <img src="./img/clientes/Logo-Caminante.png" alt="Grupo Ferretero Caminante - Cliente de Kergel" width="120" height="60">
+                </div>
+                <div class="logo_cliente">
+                    <img src="./img/clientes/Logo-Klyr.png" alt="Klyr Hielo - Cliente de Kergel" width="120" height="60">
+                </div>
+                <div class="logo_cliente">
+                    <img src="./img/clientes/Logo-Lft.png" alt="LFT - Cliente de Kergel" width="120" height="60">
+                </div>
+            </div>
+            
+            <img class="acento" src="./img/Acento-Kergel.png" alt="Separador decorativo" role="presentation">
+        </section>
+        
+        <!-- Sección Contacto -->
+        <section id="contacto" class="seccion_contacto" aria-labelledby="contacto-title">
+            <h2 id="contacto-title" class="titulo_contacto">Contáctanos</h2>
+            
+            <p class="descripcion_contacto">
+                Si tu empresa necesita importar productos desde cualquier parte del mundo, Kergel es tu socio estratégico. Nos encargamos de todo para que tú solo te ocupes de crecer: La atención es personalizada.
+            </p>
+            
+            <div class="contenedor_formulario">
+                <form class="formulario_contacto" action="https://formsubmit.co/sales@kergel.com.mx" method="POST" novalidate>
+                    <!-- Campos ocultos para FormSubmit -->
+                    <input type="hidden" name="_subject" value="Nuevo contacto desde el sitio web">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://xoyoc.github.io/kergel/">
+                    
                     <!-- Primera fila: Nombre y Empresa -->
                     <div class="fila_campos">
                         <div class="grupo_campo">
-                            <input type="text" id="nombre" name="nombre" class="campo_entrada" placeholder="Nombre Completo*" required>
+                            <input type="text" id="nombre" name="nombre" class="campo_entrada" 
+                                   placeholder="Nombre Completo*" required 
+                                   aria-describedby="nombre-error" minlength="2" maxlength="50">
+                            <span id="nombre-error" class="error-message" role="alert" aria-live="polite"></span>
                         </div>
                         <div class="grupo_campo">
-                            <input type="text" id="empresa" name="empresa" class="campo_entrada" placeholder="Empresa*" required>
+                            <input type="text" id="empresa" name="empresa" class="campo_entrada" 
+                                   placeholder="Empresa*" required 
+                                   aria-describedby="empresa-error" minlength="2" maxlength="100">
+                            <span id="empresa-error" class="error-message" role="alert" aria-live="polite"></span>
                         </div>
                     </div>
                     
                     <!-- Segunda fila: Email y Teléfono -->
                     <div class="fila_campos">
                         <div class="grupo_campo">
-                            <input type="email" id="email" name="email" class="campo_entrada" placeholder="Email*" required>
+                            <input type="email" id="email" name="email" class="campo_entrada" 
+                                   placeholder="Email*" required 
+                                   aria-describedby="email-error" maxlength="100">
+                            <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
                         </div>
                         <div class="grupo_campo">
-                            <input type="tel" id="telefono" name="telefono" class="campo_entrada" placeholder="Teléfono*" required>
+                            <input type="tel" id="telefono" name="telefono" class="campo_entrada" 
+                                   placeholder="Teléfono*" required 
+                                   aria-describedby="telefono-error" pattern="[0-9+\-\s\(\)]{10,20}">
+                            <span id="telefono-error" class="error-message" role="alert" aria-live="polite"></span>
                         </div>
                     </div>
                     
                     <!-- Campo de mensaje -->
                     <div class="grupo_campo">
-                        <textarea id="mensaje" name="mensaje" class="campo_mensaje" placeholder="Mensaje*" required></textarea>
+                        <textarea id="mensaje" name="mensaje" class="campo_mensaje" 
+                                  placeholder="Mensaje *" 
+                                  required aria-describedby="mensaje-error" 
+                                  minlength="10" maxlength="1000"></textarea>
+                        <span id="mensaje-error" class="error-message" role="alert" aria-live="polite"></span>
                     </div>
                     
                     <!-- Botón de enviar -->
-                    <button type="submit" class="boton_enviar">Enviar</button>
+                    <button type="submit" class="boton_enviar" aria-describedby="enviar-info">
+                        <span class="button-text">Enviar</span>
+                        <span class="loading-text" style="display: none;">Enviando...</span>
+                    </button>
+                    <div id="enviar-info" class="sr-only">Enviar formulario de contacto</div>
                 </form>
             </div>
         </section>
-
     </main>
-    <footer class="footer">
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="contenedor_footer">
-            <!-- Logo Kergel -->
+            <!-- Logo y Dirección -->
             <div class="footer_logo">
-                <img src="./img/Logo-Kergel-Footer.png" alt="Logotipo">
-                <div class="footer_direccion">Salvador Madariaga 5277<br>Col. Jardines Universidad,<br>Zapopan, Jalisco. C.P. 45110</div>
+                <img src="./img/Logo-Kergel-Footer.png" alt="Kergel Footer Logo" width="60" height="60">
+                <address class="footer_direccion">
+                    Salvador Madariaga 5277<br>
+                    Col. Jardines Universidad,<br>
+                    Zapopan, Jalisco. C.P. 45110
+                </address>
             </div>
-            <!-- Información de contacto central -->
+            
+            <!-- Información de contacto -->
             <div class="footer_contacto">
-                <a class="footer_email" href="mailto:sales@kergel.com.mx">sales@kergel.com.mx</a>
-                <a class="footer_telefono" href="tel:+523335707315">+52 333 570 7315</a>
+                <a href="mailto:sales@kergel.com.mx" class="footer_email" aria-label="Enviar email a Kergel">
+                    sales@kergel.com.mx
+                </a>
+                <a href="tel:+523335707315" class="footer_telefono" aria-label="Llamar a Kergel">
+                    +52 333 570 7315
+                </a>
             </div>
+            
             <!-- Logo Connecting Worlds -->
             <div class="footer_logo_connecting">
-                <img src="./img/Slogan-Kergel-Footer.png" alt="Isotipo">
+                <img src="./img/Slogan-Kergel-Footer.png" alt="Kergel - Connecting Worlds" width="80" height="80">
             </div>
         </div>
+        
         <!-- Sección inferior -->
         <div class="footer_inferior">
-            <div class="footer_copyright">ⓒ Kergel 2025</div>
-            <!-- Redes sociales con Font Awesome -->
-            <div class="footer_redes">
-                <a href="#" class="red_social" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
+            <div class="footer_copyright">
+                <small>&copy; Kergel 2025. Todos los derechos reservados.</small>
+            </div>
+            
+            <!-- Redes sociales -->
+            <div class="footer_redes" role="navigation" aria-label="Redes sociales">
+                <a href="#" class="red_social" aria-label="Síguenos en Twitter" rel="noopener" target="_blank">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="red_social" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
+                <a href="#" class="red_social" aria-label="Síguenos en LinkedIn" rel="noopener" target="_blank">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="red_social" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
+                <a href="#" class="red_social" aria-label="Síguenos en Facebook" rel="noopener" target="_blank">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="red_social" aria-label="Google">
-                    <i class="fab fa-google"></i>
+                <a href="#" class="red_social" aria-label="Síguenos en Google" rel="noopener" target="_blank">
+                    <i class="fab fa-google" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="red_social" aria-label="Pinterest">
-                    <i class="fab fa-pinterest-p"></i>
+                <a href="#" class="red_social" aria-label="Síguenos en Pinterest" rel="noopener" target="_blank">
+                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="red_social" aria-label="Telegram">
-                    <i class="fab fa-telegram-plane"></i>
+                <a href="#" class="red_social" aria-label="Síguenos en Telegram" rel="noopener" target="_blank">
+                    <i class="fab fa-telegram-plane" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
     </footer>
+    
+    <!-- Scripts -->
+    <script>
+        // Smooth scrolling para navegación interna
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Validación básica del formulario
+        const form = document.querySelector('.formulario_contacto');
+        const fields = form.querySelectorAll('input, textarea');
+        
+        fields.forEach(field => {
+            field.addEventListener('blur', validateField);
+            field.addEventListener('input', clearError);
+        });
+        
+        function validateField(e) {
+            const field = e.target;
+            const errorElement = document.getElementById(field.id + '-error');
+            
+            if (!field.validity.valid) {
+                field.classList.add('error');
+                if (errorElement) {
+                    errorElement.textContent = getErrorMessage(field);
+                }
+            } else {
+                field.classList.remove('error');
+                if (errorElement) {
+                    errorElement.textContent = '';
+                }
+            }
+        }
+        
+        function clearError(e) {
+            const field = e.target;
+            const errorElement = document.getElementById(field.id + '-error');
+            
+            if (field.validity.valid) {
+                field.classList.remove('error');
+                if (errorElement) {
+                    errorElement.textContent = '';
+                }
+            }
+        }
+        
+        function getErrorMessage(field) {
+            if (field.validity.valueMissing) {
+                return 'Este campo es requerido';
+            }
+            if (field.validity.typeMismatch) {
+                return 'Por favor, ingresa un formato válido';
+            }
+            if (field.validity.tooShort) {
+                return `Mínimo ${field.minLength} caracteres`;
+            }
+            if (field.validity.tooLong) {
+                return `Máximo ${field.maxLength} caracteres`;
+            }
+            if (field.validity.patternMismatch) {
+                return 'El formato no es válido';
+            }
+            return 'Por favor, corrige este campo';
+        }
+        
+        // Envío del formulario
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitButton = form.querySelector('.boton_enviar');
+            const buttonText = submitButton.querySelector('.button-text');
+            const loadingText = submitButton.querySelector('.loading-text');
+            
+            // Validar todos los campos
+            let isValid = true;
+            fields.forEach(field => {
+                if (!field.validity.valid) {
+                    isValid = false;
+                    field.classList.add('error');
+                    const errorElement = document.getElementById(field.id + '-error');
+                    if (errorElement) {
+                        errorElement.textContent = getErrorMessage(field);
+                    }
+                }
+            });
+            
+            if (isValid) {
+                // Mostrar estado de carga
+                submitButton.disabled = true;
+                submitButton.classList.add('loading');
+                buttonText.style.display = 'none';
+                loadingText.style.display = 'inline';
+                
+                // Enviar formulario
+                const formData = new FormData(form);
+                
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Éxito
+                        form.reset();
+                        alert('¡Mensaje enviado exitosamente! Te contactaremos pronto.');
+                    } else {
+                        throw new Error('Error en el envío');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.');
+                })
+                .finally(() => {
+                    // Restaurar botón
+                    submitButton.disabled = false;
+                    submitButton.classList.remove('loading');
+                    buttonText.style.display = 'inline';
+                    loadingText.style.display = 'none';
+                });
+            }
+        });
+        
+        // Intersection Observer para animaciones
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observar elementos para animaciones
+        document.querySelectorAll('.ventaja_item, .tarjeta_proceso, .logo_cliente').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Lazy loading para imágenes
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[data-src]');
+            images.forEach(img => {
+                img.src = img.dataset.src;
+                img.addEventListener('load', () => {
+                    img.classList.add('loaded');
+                });
+            });
+        } else {
+            // Fallback para navegadores que no soportan lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+            document.body.appendChild(script);
+        }
+        
+        // Detección de dispositivos móviles para optimizaciones
+        const isMobile = window.innerWidth <= 768;
+        
+        if (isMobile) {
+            // Optimizaciones específicas para móvil
+            document.body.classList.add('mobile-device');
+            
+            // Reducir animaciones en móvil para mejor rendimiento
+            document.documentElement.style.setProperty('--animation-duration', '0.3s');
+        }
+        
+        // Manejo de errores globales
+        window.addEventListener('error', function(e) {
+            console.error('Error en la página:', e.error);
+            // Aquí podrías enviar el error a un servicio de monitoreo
+        });
+        
+        // Service Worker para PWA (opcional)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('SW registrado con éxito:', registration.scope);
+                    })
+                    .catch(function(error) {
+                        console.log('SW falló al registrarse:', error);
+                    });
+            });
+        }
+        
+        // Manejo de enlaces externos
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            if (!link.hostname.includes(window.location.hostname)) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
+        
+        // Scroll suave al logo principal
+        document.querySelector('.logo_menu').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#inicio').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        
+        // Indicador de scroll para la navegación
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            const header = document.querySelector('header');
+            
+            if (scrolled > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Precargar la siguiente sección al hacer scroll
+        let currentSection = 0;
+        const sections = document.querySelectorAll('section');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset;
+            
+            sections.forEach((section, index) => {
+                const sectionTop = section.offsetTop - 200;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollTop >= sectionTop && scrollTop < sectionTop + sectionHeight) {
+                    currentSection = index;
+                    
+                    // Precargar imágenes de la siguiente sección
+                    if (sections[index + 1]) {
+                        const nextImages = sections[index + 1].querySelectorAll('img[data-src]');
+                        nextImages.forEach(img => {
+                            if (!img.src) {
+                                img.src = img.dataset.src;
+                            }
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Optimización de rendimiento: debounce para scroll
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+        
+        const debouncedScroll = debounce(function() {
+            // Funciones de scroll optimizadas aquí
+        }, 16); // 60fps
+        
+        window.addEventListener('scroll', debouncedScroll);
+        
+        // Analítica básica (opcional)
+        function trackEvent(eventName, properties) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, properties);
+            }
+            console.log('Event tracked:', eventName, properties);
+        }
+        
+        // Rastrear clics en el formulario
+        form.addEventListener('submit', function() {
+            trackEvent('form_submit', {
+                form_name: 'contact_form',
+                page_location: window.location.href
+            });
+        });
+        
+        // Rastrear clics en navegación
+        document.querySelectorAll('.textblanco_menu').forEach(link => {
+            link.addEventListener('click', function() {
+                trackEvent('navigation_click', {
+                    link_text: this.textContent,
+                    destination: this.getAttribute('href')
+                });
+            });
+        });
+        
+        // Rastrear clics en redes sociales
+        document.querySelectorAll('.red_social').forEach(link => {
+            link.addEventListener('click', function() {
+                trackEvent('social_click', {
+                    platform: this.getAttribute('aria-label'),
+                    location: 'footer'
+                });
+            });
+        });
+        
+        // Manejo de redimensionamiento de ventana
+        let resizeTimer;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+                // Reajustar elementos que dependen del tamaño de ventana
+                const isMobileNow = window.innerWidth <= 768;
+                
+                if (isMobileNow !== isMobile) {
+                    location.reload(); // Recargar si cambió el tipo de dispositivo
+                }
+            }, 250);
+        });
+        
+        // Accessibility: manejo de focus para usuarios de teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab') {
+                document.body.classList.add('user-is-tabbing');
+            }
+        });
+        
+        document.addEventListener('mousedown', function() {
+            document.body.classList.remove('user-is-tabbing');
+        });
+        
+        // Inicialización completa
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Kergel website loaded successfully');
+            
+            // Cualquier inicialización adicional aquí
+            trackEvent('page_load', {
+                page_title: document.title,
+                page_location: window.location.href
+            });
+        });
+    </script>
+    
+    <!-- Schema.org adicional para mejor SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Kergel",
+        "url": "https://xoyoc.github.io/kergel/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://xoyoc.github.io/kergel/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <!-- Critial CSS inline para mejor rendimiento -->
+    <style>
+        /* Critical CSS para above-the-fold content */
+        .loading { opacity: 0.6; pointer-events: none; }
+        .error { border-color: #ff4757 !important; }
+        .animate-fade-in { animation: fadeIn 0.6s ease-out; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .user-is-tabbing *:focus {
+            outline: 3px solid var(--color-naranja) !important;
+            outline-offset: 2px !important;
+        }
+        
+        .mobile-device * {
+            animation-duration: 0.3s !important;
+        }
+        
+        header.scrolled {
+            background: rgba(26, 54, 93, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        
+        .error-message {
+            color: #ff4757;
+            font-size: 12px;
+            margin-top: 4px;
+            display: block;
+        }
+        
+        .loaded {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        
+        img[data-src] {
+            opacity: 0;
+        }
+    </style>
 </body>
 </html>
